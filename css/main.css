@@ -31,7 +31,6 @@
         left: 0;
         width: 300px;
         top: 100;
-        
     }
 
     .menu > li{
@@ -40,7 +39,6 @@
         padding: 16px;
         border-top: 4px solid transparent;
         position: relative;
-        
     }
 
     .clear{
@@ -48,8 +46,7 @@
     }
 
     .menu li:hover .submenu{
-        display: block;
-        
+        display: block; 
     }
 
     .submenu li{
@@ -119,7 +116,6 @@
 
         .noticias{
             display: block;
-            
         }
 
         .noticias .noticia{
@@ -129,5 +125,41 @@
         aside {
             padding-left: 0;
         }
+
+        header div.container{
+            flex-direction: column;
+        }
+
+        .submenu{
+            display: block;
+            width: 100% ;
+            position: relative;
+            border: none;
+        }
+        
+        .menu{
+            display: none;
+        }
+
+        .menu > li{
+            clear: both;
+        }
+    
+        .submenu li{
+            display: block;
+            padding: 8px;
+        }
+
+        .botao-menu{
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+            padding-bottom: 16px ;
+        }
+
+        .botao-menu bottom{
+            padding: 8px;
+        }
+
     }
 

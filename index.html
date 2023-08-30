@@ -14,11 +14,14 @@
 <body>
     <header>
     <div class="container" >
-        <h1>Portal de Notícias</h1>
+        <h1>EBAC News</h1>
         <form>
             <input type="search" placeholder="Busque no site">
             <button type="submit">Pesquisar</button>
         </form>
+    </div>
+    <div class="botao-menu">
+       <button type="button"> Abrir Menu  </button> 
     </div>
     <nav class="container" >
         <ul class="menu">
@@ -86,7 +89,7 @@
                     </article>
                     <article class="noticia" >
                         <a href="#">
-                            <img src="https://via.placeholder.com/320x320"/>
+                            <img src="https://via.placeholder.com/320/320"/>
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa, animi veritatis quidem repudiandae soluta? </h3>
                             </a>
                     </article>
@@ -124,5 +127,13 @@
         </aside>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu').click(function() {
+                $('.menu').slideToggle();
+            });
+        })
+    </script>
 </body>
 </html>
